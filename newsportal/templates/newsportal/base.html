@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+	<title>Smart News</title>
+	<link rel="shortcut icon" href="{% static 'logo1.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/autocomplete.css'%}">
+	<script src="{% static 'jquery-3.3.1.min.js'%}"></script>
+    <script src="{% static 'popper.min.js' %}" ></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/autocomplete.js' %}"></script>
+
+</head>
+<body>
+
+<div class="container-fluid" id="logo">
+			<img src="logo1.svg">	
+			<h2><i>Smart News</i></h2>	
+</div>
+<br><br>
+<div class="container" id="info">
+	<div class="row">
+		<article class="col-md-4">
+			<h3> 138 Sources</h3>			
+			<img src="sources.jpg">
+		</article>
+		<article class="col-md-4">
+			<h3> 7 Categories</h3>			
+			<img src="category.jpg">
+		</article>
+		<article class="col-md-4">
+			<h3> 50 Countries</h3>			
+			<img src="country.jpeg">
+		</article>
+	</div><!-- row-->
+</div><!-- container-->
+
+<div class="container">
+	{% block content %}
+    {% endblock %}
+</div>
+
+
+</body>
+</html>
