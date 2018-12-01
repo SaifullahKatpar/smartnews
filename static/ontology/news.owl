@@ -1,0 +1,1009 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#based_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#based_in">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Source"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_category -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_category">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Category"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_code -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_code">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_domain -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_domain">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Source"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Web_Domain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_language -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_language">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Source"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Language"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_source -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_source">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#publishes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#is_from -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#is_from">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#publishes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#publishes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Source"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Item"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#sort_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#sort_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Sorting_Order"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#writes_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#writes_in">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Source"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Language"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#content -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#content">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_author -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_author"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Source"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Source"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#url -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#url">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Item"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Source"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#url_to_image -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#url_to_image">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Item"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Source"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Article -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Article">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Item"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Headline"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A news article discusses current or recent news of either general interest or of a specific topic.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Blog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Blog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Source"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Agency"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A blog or a weblog is a discussion or informational website published on the World Wide Web consisting of discrete, often informal diary-style text entries (posts).</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blog</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Category -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Category">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#business"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#entertainment"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#general"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#health"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#science"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#sports"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#technology"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The type of news published.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Country">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_code"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_language"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Language"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Country where the news source is based in, or publishes the news items from.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Headline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Headline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Item"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A head of a newspaper story or article usually printed in large type and giving the gist of the story or article that follows.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">he ISO country codes are internationally recognized codes that designate every country and most of the dependent areas a two-letter combination or a three-letter combination; it is like an acronym, that stands for a country or a state.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Language">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a system of communication used by a particular country or community.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Agency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Agency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Source"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A news agency is an organization that gathers news reports and sells them to subscribing news organizations, such as newspapers, magazines and radio and television broadcasters. A news agency may also be referred to as a wire service, newswire, or news service.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Item">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_category"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Category"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_language"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Language"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_source"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Source"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#is_from"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#sort_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Sorting_Order"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a particular piece of news, usually from a journalistic source or a section of a news broadcast dealing with a particular story</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Source -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Source">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#based_in"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_domain"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Web_Domain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#publishes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Item"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#writes_in"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Language"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is the source from where the news item was published</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Sorting_Order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Sorting_Order">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">order with which to sort the news items</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Web_Domain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Web_Domain">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">domain of the publisher</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#at -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#at">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#au -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#au">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#be -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#be">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#bg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#bg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#br -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#br">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#business -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#business">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#cn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#cn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#co -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#co">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#cu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#cu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#cz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#cz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#de -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#de">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#eg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#eg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#en -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#en">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#entertainment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#entertainment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#es -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#es">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#fr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#fr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#gb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#gb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#general -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#general">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#gr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#gr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#he -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#he">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#health -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#health">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#hk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#hk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#hu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#hu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#id -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#id">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#il -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#il">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#in -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#in">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#it -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#it">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#jp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#jp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#kr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#kr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#lt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#lt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#lv -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#lv">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#mx -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#mx">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#my -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#my">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#nl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#nl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#no -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#no">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#nz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#nz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ph -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ph">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#pl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#pl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#popularity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#popularity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Sorting_Order"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#pt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#pt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#publishedAt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#publishedAt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Sorting_Order"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#relevancy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#relevancy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Sorting_Order"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#rs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#rs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ru -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ru">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#sa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#sa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#science -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#science">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#se -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#se">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#sg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#sg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#si -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#si">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#sk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#sk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#sports -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#sports">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#technology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#technology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#th -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#th">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#tr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#tr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#tw -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#tw">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ua -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ua">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ud -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ud">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#us -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#us">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ve -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ve">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#za -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#za">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#zh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#zh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Country"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#ISO_Code"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Language"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Item"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Source"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Sorting_Order"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#Web_Domain"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
