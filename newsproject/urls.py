@@ -23,7 +23,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home,name='home'),
-    path('news/<str:query>', views.home,name='home'),
+    path('news/', views.news,name='news'),
 
 ]+static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
 

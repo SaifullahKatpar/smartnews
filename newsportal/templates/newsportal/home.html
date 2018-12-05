@@ -1,21 +1,16 @@
-<!DOCTYPE html>
-<html>
-<body>
+{% extends 'newsportal/base.html' %}
 
 {% block content %}
-<form autocomplete="off" action="/action_page.php">
-  <div class="autocomplete" style="width:300px;">
-    <input id="myInput" type="text" name="myCountry" placeholder="Country">
+
+
+<form classautocomplete="off" action="/news/" method="get">
+  <div class="autocomplete" style="width:500px;">
+        {{ form }}
   </div>
-  <input type="submit">
-</form>
+        <input type="submit" value="Search">
+ 
+</form>	
 
 {% endblock %}
 
-<script type="text/javascript">
 
-</script>
-
-
-</body>
-</html>

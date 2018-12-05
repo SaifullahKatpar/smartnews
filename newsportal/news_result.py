@@ -1,5 +1,4 @@
 from newsapi import NewsApiClient
-import rdflib
 
 
 class NewsResult():
@@ -17,26 +16,18 @@ class NewsResult():
 	def get_sources(self):
 		sources = self.newsapi.get_sources()
 		return sources
-#	def get_headlines(self):
 
-#	def get_everything(self):
+	def get_headlines_from_source(self,source):
+		print(source)
+		top_headlines = self.newsapi.get_top_headlines(sources=source)
+		return top_headlines['articles']
 
+	# return headlines from country 
 
-
-
-#	def query(self,q):
-
-
-
-#	def add_to_ontology(self,qquery_result, ontology='news.owl',isLocal=True):
-#		g = rdflib.Graph()
-#		if isLocal:
-#			g.parse(self.ontology_path+ontology)
-#		else:
-#			g.parse(ontology)
-#
-#	def get_annotated_results(self,):
-
+	def add_to_ontology(self,query_result, ontology='news.owl',isLocal=True):
+		
+		
+		
 
 
 

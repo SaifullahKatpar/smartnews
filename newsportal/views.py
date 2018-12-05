@@ -1,10 +1,20 @@
 from django.shortcuts import render
 from .news_result import NewsResult
-# Create your views here.
+from django.http import HttpResponse
+from .forms import QueryForm
+
+
 def home(request):
-	news_ob = NewsResult()
-	result = news_ob.get_sources()
-	return render(request,'newsportal/home.html',{'result':result['sources']})
+	form = QueryForm()
+	return render(request,'newsportal/home.html',{'form':form})
+
+def news(request):
+	if request.GET['source']:
+		headlines = NewsResult().get_headlines_from_source(request.GET['source'])
+	else:
+		headlines = 'No Healines Available'
+
+	return HttpResponse(headlines)
 
 #def news(request,q):
 #	news_ob = NewsResult()

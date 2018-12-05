@@ -146,7 +146,10 @@
 
     <!-- http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_author -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_author"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#has_author">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2018/10/untitled-ontology-90#News_Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
